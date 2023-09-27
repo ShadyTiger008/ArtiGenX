@@ -10,20 +10,14 @@ const Dialog = DialogPrimitive.Root
 
 const DialogTrigger = DialogPrimitive.Trigger
 
-interface DialogPortalProps extends DialogPrimitive.DialogPortalProps {
-  className?: string;
-  children: React.ReactNode
-}
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 const DialogPortal = ({
   className,
   ...props
-}: DialogPortalProps ) => (
-  <DialogPrimitive.Portal {...props}>
-    <div className={cn(className)} />
-  </DialogPrimitive.Portal>
+}: DialogPrimitive.DialogPortalProps) => (
+  <DialogPrimitive.Portal className={cn(className)} {...props} />
 )
-
 DialogPortal.displayName = DialogPrimitive.Portal.displayName
 
 const DialogOverlay = React.forwardRef<

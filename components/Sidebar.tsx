@@ -7,7 +7,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 import {LayoutDashboard, MessageSquare, ImageIcon, VideoIcon, Music, Code, Settings} from 'lucide-react'
-import FreeCount from './free-counter';
 import FreeCounter from './free-counter';
 
 const monsterrat = Montserrat_Alternates({ weight: "600", subsets: ["latin"] })
